@@ -1,6 +1,8 @@
 *{  
     margin: 0px;   
-    font-family: sans-serif;   
+    font-family: sans-serif;
+    font-size: 22px;   
+    font-weight: 600;
 }  
  .H1{ 
     
@@ -10,72 +12,70 @@
      
     display: flex;   
     background-color:dimgrey ;  
-    height: 150px;    
-    font-weight: 600;   
+    height: 150px;   
+    min-height:150px;    
     justify-content: center;   
     align-items: center;   
+    text-align: center;
+    
 }   
 .header-sandybrown {   
      
     display: flex;   
     background-color:sandybrown ;  
-    height: 550px;    
-    font-weight: 600;   
+    height: 550px;      
     justify-content: center;   
-    align-items: center;   
-}   
-.blok-coral{   
+    align-items: center;  
+    text-align: center;
+}
+.t1{
     
-    margin: auto;   
-    display: flex; 
-    background-color: coral;    
-    width: 1170px;   
-    height: 50px;    
-    font-weight: 600;   
-    justify-content: center;   
-    align-items: center;   
-}   
+    margin: auto; 
+    display: flex;
+    background-color: coral;  
+    height: 80px;  
+    max-width:1170px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.blok-green{   
    
-.blok-gree{   
-     
-    margin: auto;   
+    margin: auto; 
     display: flex;  
     background-color: mediumseagreen ;   
-    height: 300px;   
-    width: 1170px;    
-    font-weight: 600;   
+    height: 300px;  
+    max-width: 1170px;      
     justify-content: center;   
-    align-items: center;   
+    align-items: center; 
+    text-align: center; 
+
 }   
-.text  
+.t2  
 {  
     margin: auto;  
     display: flex;  
-    background-color: coral;  
+    background-color: coral;   
+    max-width:1170px;   
+    height: 80px;
     align-items: center;   
-    justify-content: center;  
-    width: 1170px;  
-    font-weight: 600;  
-    height: 60px;  
-}  
-.blok-background-coral{   
-     
-    margin: auto;   
+    justify-content: center; 
+
+}     
+.blockes{
+    
+    margin: auto;
     display: grid; 
     background-color: coral;    
-    width: 1170px;  
-    font-weight: 600;    
+    max-width:1170px;   
     grid-template-columns: repeat(3,1fr);   
     grid-template-rows: repeat(3,150px);   
     column-gap: 20px;   
     row-gap: 20px;   
     padding-block-end: 20px;  
      
-}   
-   
-     
-   
-.blok-1{   
+}
+.b1{   
      
     display: flex; 
     background-color: blueviolet;   
@@ -87,9 +87,8 @@
     justify-content: center;   
     align-items: center; 
       
-  
 }   
-.blok-2{   
+.b2{   
      
     display: flex; 
     background-color: blueviolet;   
@@ -102,7 +101,7 @@
     align-items: center; 
     
 }   
-.blok-3{   
+.b3{   
      
     display: flex; 
     background-color: blueviolet;   
@@ -114,8 +113,7 @@
     align-items: center;  
   
 }   
-.blok-4{   
-     
+.b4{   
      
     display: flex;  
     background-color: blueviolet;   
@@ -127,7 +125,7 @@
     align-items: center; 
   
 }   
-.blok-5{   
+.b5{   
      
     display: flex; 
     background-color: blueviolet;   
@@ -139,7 +137,7 @@
     align-items: center;   
   
 }   
-.blok-6{   
+.b6{   
      
     display: flex; 
     background-color: blueviolet;   
@@ -152,7 +150,7 @@
     align-items: center;   
   
 }   
-.blok-7{   
+.b7{   
       
     display: flex; 
     background-color: blueviolet;   
@@ -166,7 +164,7 @@
  
 }   
  
-.footer{  
+footer{  
      
     margin: auto;   
     display: flex; 
@@ -175,5 +173,15 @@
     height: 400px;     
     justify-content: center;   
     align-items: center;   
-     
+    text-align: center;
+}
+@media (max-width:150px)
+{
+    .blockes{
+        
+        display: flex;
+        height:unset;
+        justify-content: center;
+    }
+    
 }
